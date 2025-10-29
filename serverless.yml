@@ -1,0 +1,38 @@
+service: cognito-login-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+  environment:
+    USER_POOL_ID: ${env:USER_POOL_ID}
+    CLIENT_ID: ${env:CLIENT_ID}
+    CLIENT_SECRET: ${env:CLIENT_SECRET}
+
+iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      - "cognito-idp:ChangePassword"
+    Resource: "*"
+
+plugins:
+  - serverless-offline
+
+functions:
+  login:
+    handler: handler.login
+    events:
+      - httpApi:
+          path: /login
+          method: post
+
+  changePassword:
+    handler: handler.changePassword
+    events:
+      - httpApi:
+          path: /change-password
+          method: post
+
+custom:
+  serverless-offline:
+    httpPort: 8000
