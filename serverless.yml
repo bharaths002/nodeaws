@@ -1,4 +1,5 @@
 service: cognito-login-service
+frameworkVersion: '4.22.0'
 
 provider:
   name: aws

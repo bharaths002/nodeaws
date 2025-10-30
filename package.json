@@ -12,8 +12,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@aws-sdk/client-cognito-identity-provider": "^3.918.0",
-    "dotenv": "^17.2.3"
+    "@aws-sdk/client-cognito-identity-provider": "^3.918.0"
   },
   "devDependencies": {
     "serverless": "^4.22.0",
