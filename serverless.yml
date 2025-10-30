@@ -6,9 +6,9 @@ provider:
   runtime: nodejs18.x
   region: ap-south-1
   environment:
-    USER_POOL_ID: xxxxxxxx
-    CLIENT_ID: xxxxxxxx
-    CLIENT_SECRET: xxxxxxxx
+    USER_POOL_ID: 
+    CLIENT_ID: 
+    CLIENT_SECRET: 
 
 
 iamRoleStatements:
