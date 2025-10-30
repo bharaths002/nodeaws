@@ -6,9 +6,9 @@ provider:
   runtime: nodejs18.x
   region: ap-south-1
   environment:
-    USER_POOL_ID: ap-south-1_G5tybUHMc
-    CLIENT_ID: 1jl67hl6kon0hf4aaqus6r3f7
-    CLIENT_SECRET: bio7h8p0m0hecb7237hna971bh57fkubde4i8v7qpvd2eu1um0f
+    USER_POOL_ID: xxxxxxxx
+    CLIENT_ID: xxxxxxxx
+    CLIENT_SECRET: xxxxxxxx
 
 
 iamRoleStatements:
